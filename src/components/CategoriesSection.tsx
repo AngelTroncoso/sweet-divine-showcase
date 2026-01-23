@@ -1,19 +1,19 @@
 import { motion } from "framer-motion";
 
-import cake01 from "@/assets/cakes/cake-01.jpg";
-import cake03 from "@/assets/cakes/cake-03.jpg";
+import cake09 from "@/assets/cakes/cake-09.jpg";
+import cake02 from "@/assets/cakes/cake-02.jpg";
 import cake10 from "@/assets/cakes/cake-10.jpg";
 import cake12 from "@/assets/cakes/cake-12.jpg";
 
 const categories = [
   {
     name: "Infantiles",
-    image: cake01,
+    image: cake09,
     description: "Diseños mágicos para los más pequeños",
   },
   {
     name: "Bodas",
-    image: cake03,
+    image: cake02,
     description: "Elegancia para el día más especial",
   },
   {
