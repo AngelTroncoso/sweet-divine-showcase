@@ -11,7 +11,7 @@ const navLinks = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const whatsappLink = "https://wa.me/1234567890?text=Hola,%20me%20gustaría%20cotizar%20una%20torta%20personalizada";
+  const whatsappLink = "https://wa.me/56968397960?text=Hola,%20me%20gustaría%20cotizar%20una%20torta%20personalizada";
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
@@ -20,7 +20,7 @@ export const Navbar = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
             <span className="font-display text-xl md:text-2xl font-semibold text-foreground">
-              La Gloria de Dios
+              Delicias "La Gloria de Dios"
             </span>
           </a>
 
