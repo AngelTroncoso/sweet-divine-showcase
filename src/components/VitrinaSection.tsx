@@ -3,11 +3,19 @@ import { motion } from "framer-motion";
 import cake01 from "@/assets/cakes/cake-01.jpg";
 import cake03 from "@/assets/cakes/cake-03.jpg";
 import cake06 from "@/assets/cakes/cake-06.jpg";
+import cake07 from "@/assets/cakes/cake-07.jpg";
 import cake08 from "@/assets/cakes/cake-08.jpg";
 import cake10 from "@/assets/cakes/cake-10.jpg";
 import cake11 from "@/assets/cakes/cake-11.jpg";
+import cake13 from "@/assets/cakes/cake-13.jpg";
+import cake17 from "@/assets/cakes/cake-17.jpg";
+import cake18 from "@/assets/cakes/cake-18.jpg";
 
 const vitrinaImages = [
+  { src: cake07, alt: "Torta galaxia azul y dorada" },
+  { src: cake13, alt: "Torta de chocolate con mariposa" },
+  { src: cake17, alt: "Torta morada con rosas blancas" },
+  { src: cake18, alt: "Torta floral naranja y rosa" },
   { src: cake01, alt: "Torta deportiva" },
   { src: cake03, alt: "Torta musical" },
   { src: cake06, alt: "Torta elegante negra" },
@@ -35,23 +43,24 @@ export const VitrinaSection = () => {
           </p>
         </motion.div>
 
-        {/* Masonry Grid */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+        {/* Symmetric Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {vitrinaImages.map((image, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="break-inside-avoid"
+              transition={{ duration: 0.5, delay: index * 0.05 }}
             >
-              <div className="relative group overflow-hidden rounded-xl shadow-card hover:shadow-hover transition-shadow duration-300 image-overlay">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-auto object-cover image-hover-zoom"
-                />
+              <div className="relative group overflow-hidden rounded-xl shadow-card hover:shadow-hover transition-shadow duration-300 aspect-square">
+                <div className="absolute inset-0 image-overlay">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover image-hover-zoom"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
