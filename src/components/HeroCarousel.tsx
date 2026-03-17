@@ -67,7 +67,7 @@ export const HeroCarousel = () => {
             Tortas artesanales hechas con amor y los mejores ingredientes
           </p>
           <a
-            href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20cotizar%20una%20torta%20personalizada"
+            href="https://wa.me/+56968397960?text=Hola,%20me%20gustaría%20cotizar%20una%20torta%20personalizada"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3 bg-gold hover:bg-gold/90 text-gold-foreground font-medium rounded-full transition-all duration-300 shadow-card hover:shadow-hover"
